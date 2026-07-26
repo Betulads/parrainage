@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Invitation BoursoBank</title>
+
+<meta http-equiv="refresh" content="6;url=https://bour.so/p/sfenKtEfwv0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+
+background:
+linear-gradient(-45deg,#004aad,#6a11cb,#2575fc,#00c6ff);
+
+background-size:400% 400%;
+
+animation:bg 15s ease infinite;
+
+padding:20px;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+.card{
+
+position:relative;
+
+width:100%;
+max-width:470px;
+
+padding:42px;
+
+border-radius:28px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.3);
+
+box-shadow:0 25px 70px rgba(0,0,0,.25);
+
+text-align:center;
+
+color:white;
+
+animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.logo{
+
+width:90px;
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:45px;
+
+background:rgba(255,255,255,.2);
+
+}
+
+h1{
+
+margin-top:22px;
+
+font-size:30px;
+
+font-weight:700;
+
+}
+
+.subtitle{
+
+margin-top:15px;
+
+font-size:17px;
+
+line-height:1.6;
+
+opacity:.95;
+
+}
+
+.badge{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:8px 16px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.2);
+
+font-size:14px;
+
+}
+
+.circle{
+
+margin:35px auto;
+
+width:90px;
+height:90px;
+
+border-radius:50%;
+
+border:6px solid rgba(255,255,255,.25);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:34px;
+font-weight:bold;
+
+}
+
+.button{
+
+display:block;
+
+padding:18px;
+
+border-radius:14px;
+
+background:white;
+
+color:#0057ff;
+
+text-decoration:none;
+
+font-weight:700;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.footer{
+
+margin-top:28px;
+
+font-size:13px;
+
+opacity:.85;
+
+line-height:1.6;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">
+💳
+</div>
+
+<h1>Bienvenue</h1>
+
+<p class="subtitle">
+
+Vous allez être redirigé vers la page officielle de l'offre de parrainage BoursoBank.
+
+</p>
+
+<div class="badge">
+🔒 Connexion sécurisée
+</div>
+
+<div class="circle" id="timer">
+6
+</div>
+
+<a class="button" href="https://bour.so/p/sfenKtEfwv0">
+Découvrir l'offre
+</a>
+
+<p class="footer">
+
+Redirection automatique dans quelques secondes.<br><br>
+
+Les conditions et avantages de l'offre sont consultables sur la page officielle de BoursoBank.
+
+</p>
+
+</div>
+
+<script>
+
+let secondes=6;
+
+const timer=document.getElementById("timer");
+
+setInterval(function(){
+
+secondes--;
+
+if(secondes>=0){
+
+timer.innerHTML=secondes;
+
+}
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
